@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/circle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/gray_cc"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/top_circle"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@color/white" />
+
+        <ImageView
+            android:id="@+id/middle_top_circle"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_below="@id/top_circle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@color/white" />
+
+        <ImageView
+            android:id="@+id/channel_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/middle_top_circle"
+            android:layout_marginTop="25dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_loading" />
+
+        <TextView
+            android:id="@+id/channel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/channel_icon"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Kplay车电台"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/bottom_circle"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:src="@color/white" />
+
+        <ImageView
+            android:id="@+id/middle_bottom_circle"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_above="@id/bottom_circle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:src="@color/white" />
+
+    </RelativeLayout>
+
+</LinearLayout>

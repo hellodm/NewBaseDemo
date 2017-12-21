@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BaseModule/BaseModule.iml" filepath="$PROJECT_DIR$/BaseModule/BaseModule.iml" />
+      <module fileurl="file://F:\workspace\NewBaseDemo\Java\Java.iml" filepath="F:\workspace\NewBaseDemo\Java\Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NewBaseDemo.iml" filepath="$PROJECT_DIR$/NewBaseDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PullRefreshlibrary/PullRefreshlibrary.iml" filepath="$PROJECT_DIR$/PullRefreshlibrary/PullRefreshlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/lib.iml" filepath="$PROJECT_DIR$/lib/lib.iml" />
+    </modules>
+  </component>
+</project>

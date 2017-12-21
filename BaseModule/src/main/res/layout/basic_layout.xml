@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="LOCK" />
+
+        <Button
+            android:id="@+id/button_default_green"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="DEFAULT GREEN" />
+        <!--android:theme="@style/GreenButton" />-->
+
+        <Button
+            android:id="@+id/button_default_yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="DEFAULT YELLOW" />
+        <!--android:theme="@style/YellowButton" />-->
+
+        <Button
+            android:id="@+id/button_default_hole"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="DEFAULT HOLE" />
+
+        <TextView
+            android:id="@+id/text_hsv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="HSV: (??,??,??,??)" />
+
+    </LinearLayout>
+
+
+    <org.opencv.android.JavaCameraView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/color_blob_detection_activity_surface_view" />
+
+</LinearLayout>

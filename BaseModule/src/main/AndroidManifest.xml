@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.hello.app"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.PHONE_STATE" />
+    <uses-permission android:name="android.permission.NEW_OUTGOING_CALL" />
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <!-- 解锁屏幕的权限 -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <!-- 唤醒屏幕的权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.a" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <supports-gl-texture android:name="GL_OES_compressed_ETC1_RGB8_texture" />
+    <supports-gl-texture android:name="GL_OES_compressed_paletted_texture" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front.autofocus"
+        android:required="false" />
+
+    <application
+        android:name=".Activity.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+
+        <!-- 百度地图配置================================================= -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="XjnuUCrRC30rjlGu7qLcPBTL" />
+
+        <activity
+            android:name=".Activity.LoadingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.GravityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="myapp" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.CommentActivity"
+            android:label="@string/title_activity_comment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.BitmapActivity"
+            android:label="@string/title_activity_bitmap"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ListRefreshActivity"
+            android:label="@string/title_activity_list_refresh"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Base.BaseActivity"
+            android:label="@string/title_activity_bace"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.EnumActivity"
+            android:label="@string/title_activity_enum"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.MyVoiceActivity"
+            android:label="@string/title_activity_my_voice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.CircleActivity"
+            android:label="@string/title_activity_circle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.EditActivity"
+            android:label="@string/title_activity_edit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.BaiduActivity"
+            android:label="@string/title_activity_baidu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.CheckActivity"
+            android:label="@string/title_activity_check"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.FragActivity"
+            android:label="@string/title_activity_frag"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.CompareActivity"
+            android:label="@string/title_activity_compare"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.TimePickActivity"
+            android:label="@string/title_activity_pick" />
+        <activity
+            android:name=".Activity.ChatActivity"
+            android:label="@string/title_activity_pick" />
+        <activity
+            android:name=".Activity.LocationActivity"
+            android:label="@string/title_activity_location" />
+        <activity
+            android:name=".Activity.MyBroadcastActivity"
+            android:label="@string/title_activity_location" />
+        <activity
+            android:name=".Activity.MyCacheActivity"
+            android:label="@string/title_activity_location"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SunSetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.OpenGLActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.YearViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.UnityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.WebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ScratchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ShakeDelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SuspendActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.top.lock"
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar" />
+        <activity
+            android:name=".Activity.NotifyActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+
+        <!-- android:excludeFromRecents="true" -->
+        <!-- android:launchMode="singleInstance" -->
+
+
+        <!-- android:taskAffinity="" -->
+        <activity
+            android:name=".Activity.SuspendSendActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".Service.SuspendService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".Service.VoiceMapService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".Service.VoiceMapWordService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".Service.VoiceWsService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".Service.DialogNotifyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".Brodcast.SuspendReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.myapplication.lock" />
+                <action android:name="android.myapplication.banner" />
+                <action android:name="android.myapplication.desktop" />
+                <action android:name="android.myapplication.fixed" />
+                <action android:name="android.myapplication.dynamic" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Activity.VoiceMapActivity"
+            android:label="@string/title_activity_voice_map" />
+        <activity android:name=".Activity.VoiceWsActivity" />
+        <activity
+            android:name=".Activity.BaseTitleActivity"
+            android:label="@string/title_activity_base_title" />
+        <activity
+            android:name=".Activity.SeekBarActivity"
+            android:label="@string/title_activity_seek_bar" />
+        <activity
+            android:name=".Activity.SoundPoolActivity"
+            android:label="@string/title_activity_sound_pool" />
+        <activity android:name=".Activity.KplayActivity" />
+        <activity android:name=".Activity.RXJavaActivity" />
+        <activity
+            android:name=".test.view.ActivityV"
+            android:label="@string/title_activity_activity_v" />
+
+        <service
+            android:name=".setvice.MyService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.myapplication.desktop" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Activity.VieoplayerActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+        <activity android:name=".Activity.PathAnimActivity" />
+        <activity
+            android:name=".Activity.FTPActivity"
+            android:label="@string/title_activity_ftp" />
+        <activity
+            android:name=".Activity.WaveActivity"
+            android:label="@string/title_activity_wave" />
+        <activity
+            android:name=".Activity.CallRecordActivity"
+            android:label="@string/title_activity_call_record" />
+        <activity android:name=".opencv.BasicActivity" />
+
+        <service
+            android:name=".setvice.PhoneCallService"
+            android:enabled="true"
+            android:exported="true" />
+        <service android:name=".setvice.PhoneService" />
+
+        <receiver android:name=".setvice.PhoneBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" /> <!-- 开机启动广播 -->
+                <!--
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+                <data android:scheme="file" />
+                -->
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Activity.RemoteActivity"
+            android:label="@string/title_activity_remote"
+            android:process=":remote" />
+        <activity android:name=".Activity.RemoteCopyActivity" />
+        <activity android:name=".Activity.RemoteCopyCopyActivity" />
+        <activity android:name=".Activity.ConstraintActivity" />
+        <activity android:name=".Activity.GlideActivity"></activity>
+    </application>
+
+</manifest>

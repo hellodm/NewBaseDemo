@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.hello.app.MyView.recyclerView.TitleCommonLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/go_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上拉" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/header_center_title_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/header_right_title_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/go_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下拉" />
+
+
+    </RelativeLayout>
+
+
+</com.hello.app.MyView.recyclerView.TitleCommonLayout>

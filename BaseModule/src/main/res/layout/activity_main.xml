@@ -1,0 +1,304 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.hello.app.Activity.MainActivity">
+
+
+    <com.hello.app.MyView.refresh.PullToRefreshScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_glied"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="图片加载" />
+
+            <Button
+                android:id="@+id/button_constraint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="constraint" />
+
+            <Button
+                android:id="@+id/button_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6.0" />
+
+            <Button
+                android:id="@+id/button_opencv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6.0" />
+
+            <Button
+                android:id="@+id/button_call"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="通话录音" />
+
+            <Button
+                android:id="@+id/button_wave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="wave" />
+
+            <Button
+                android:id="@+id/button_ftp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FTP" />
+
+            <Button
+                android:id="@+id/button_path_anim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="贝塞尔曲线动画" />
+
+            <Button
+                android:id="@+id/button_play_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ijkPlayer的使用" />
+
+            <Button
+                android:id="@+id/button_RX_java"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RXjava的使用" />
+
+            <Button
+                android:id="@+id/button_k_play"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="k_play的布局" />
+
+            <Button
+                android:id="@+id/button_sound_pool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="soundPool的学习" />
+
+            <Button
+                android:id="@+id/button_seek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="自定义的SeekerBar" />
+
+            <Button
+                android:id="@+id/button_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="自定义的Title" />
+
+            <Button
+                android:id="@+id/button_voice_map"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="语音识别" />
+
+            <Button
+                android:id="@+id/button_suspend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="悬浮窗管理" />
+
+            <Button
+                android:id="@+id/button_shake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="图标晃动" />
+
+            <Button
+                android:id="@+id/button_scratch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="刮刮乐" />
+
+            <Button
+                android:id="@+id/button_web"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="webView" />
+
+            <Button
+                android:id="@+id/button_loading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="双圈loadingView" />
+
+            <Button
+                android:id="@+id/button_ball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="重力小球" />
+
+            <Button
+                android:id="@+id/button_bitmap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="bitmap" />
+
+            <Button
+
+                android:id="@+id/button_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="list下拉刷新" />
+
+            <Button
+                android:id="@+id/button_enum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="枚举的学习" />
+
+            <Button
+                android:id="@+id/button_voice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="voice学习" />
+
+            <Button
+                android:id="@+id/button_circle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="头像转圈" />
+
+            <Button
+                android:id="@+id/button_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="自定义的EditText" />
+
+            <Button
+                android:id="@+id/btn_baidu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="百度地图" />
+
+            <Button
+                android:id="@+id/btn_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="检测View" />
+
+            <Button
+                android:id="@+id/btn_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="图片异步加载" />
+
+            <Button
+                android:id="@+id/btn_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="fragment" />
+
+            <Button
+                android:id="@+id/btn_compare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="compare" />
+
+            <Button
+                android:id="@+id/btn_pick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TimePick" />
+
+            <Button
+                android:id="@+id/btn_bie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TimePick" />
+
+            <Button
+                android:id="@+id/btn_communication"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="跨进程通信" />
+
+            <Button
+                android:id="@+id/btn_clearCache"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="清楚缓存" />
+
+            <Button
+                android:id="@+id/btn_sunSetView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="日落view" />
+
+            <Button
+                android:id="@+id/btn_openGl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="openGL" />
+
+            <Button
+                android:id="@+id/btn_Unity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Unity" />
+
+            <Button
+                android:id="@+id/btn_Year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="日历年视图" />
+
+        </LinearLayout>
+
+    </com.hello.app.MyView.refresh.PullToRefreshScrollView>
+
+
+    <ImageView
+        android:id="@+id/icon_main_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/main_close"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/icon_main_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="100dp"
+        android:layout_toLeftOf="@+id/icon_main_close"
+        android:scaleType="fitCenter"
+        android:src="@drawable/main_open"
+        android:visibility="invisible" />
+
+    <com.hello.app.MyView.MainTIpView
+        android:id="@+id/sdfsdf"
+        android:layout_width="55dp"
+        android:layout_height="66dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="100dp"
+        android:visibility="visible"></com.hello.app.MyView.MainTIpView>
+
+
+</RelativeLayout>

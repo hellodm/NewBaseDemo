@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_cc"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <GridView
+            android:id="@+id/gridView_shake"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:listSelector="#00000000"
+
+            android:numColumns="3" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:alignmentMode="alignBounds"
+            android:columnCount="3">
+
+            <com.hello.app.MyView.ShakeView
+                android:id="@+id/shakeView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/about_logo" />
+
+            <com.hello.app.MyView.ShakeView
+                android:id="@+id/shakeView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/about_logo" />
+
+            <com.hello.app.MyView.ShakeView
+                android:id="@+id/shakeView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/about_logo" />
+
+            <com.hello.app.MyView.ShakeView
+                android:id="@+id/shakeView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/about_logo" />
+
+            <com.hello.app.MyView.ShakeView
+                android:id="@+id/shakeView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/about_logo" />
+
+            <com.hello.app.MyView.ShakeView
+                android:id="@+id/shakeView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/about_logo" />
+        </GridLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/blue_year">
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

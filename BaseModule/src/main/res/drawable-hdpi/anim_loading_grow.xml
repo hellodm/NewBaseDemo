@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true"
+
+    >
+    <item
+        android:drawable="@drawable/icon_loading_grow_0"
+        android:duration="80"></item>
+    <item
+        android:drawable="@drawable/icon_loading_grow_1"
+        android:duration="80"></item>
+    <item
+        android:drawable="@drawable/icon_loading_grow_2"
+        android:duration="80"></item>
+    <item
+        android:drawable="@drawable/icon_loading_grow_3"
+        android:duration="80"></item>
+    <item
+        android:drawable="@drawable/icon_loading_grow_4"
+        android:duration="80"></item>
+    <item
+        android:drawable="@drawable/icon_loading_grow_5"
+        android:duration="80"></item>
+    <item
+        android:drawable="@drawable/icon_loading_grow_6"
+        android:duration="80"></item>
+    <item
+        android:drawable="@drawable/icon_loading_grow_7"
+        android:duration="80"></item>
+
+
+</animation-list>

@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gravity="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hello.app.Activity.GravityActivity">
+
+
+    <com.hello.app.MyView.GravityView
+        android:id="@+id/gravity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        gravity:g="9.8"
+        gravity:gravity_color="@android:color/black"
+        gravity:m="10"
+        gravity:radius="40" />
+
+
+</LinearLayout>

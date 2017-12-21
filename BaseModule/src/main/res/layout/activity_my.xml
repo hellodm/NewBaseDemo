@@ -1,0 +1,102 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#4D4D4D"
+            android:gravity="center"
+            android:layout_height="40dp">
+
+
+            <TextView
+                android:id="@+id/text_top"
+                android:clickable="true"
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:text="下拉"
+                android:textColor="@android:color/white"
+                android:gravity="center" />
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:padding="20dp"
+                android:id="@+id/background"
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:text="@string/hello_world"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btn_start"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="按钮" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_top"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_width="150dp"
+                android:layout_gravity="center|top"
+                android:background="@drawable/home_type_select_bg"
+                android:layout_height="200dp">
+
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <com.hello.app.MyView.LoadingView
+        android:id="@+id/load"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        myView:image="false"
+        android:layout_gravity="center"
+        myView:radius_in="20"
+        myView:radius_out="27"
+        myView:speed_in="9"
+        myView:speed_out="6"
+        myView:color_in="@android:color/background_dark"
+        myView:color_out="@android:color/holo_orange_dark" />
+
+    <!--<com.hello.app.MyView.LoadingView-->
+    <!--android:id="@+id/load"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--myView:image="true"-->
+    <!--android:layout_gravity="center"-->
+    <!--myView:speed_in="9"-->
+    <!--myView:speed_out="6"-->
+    <!--/>-->
+
+
+</FrameLayout>

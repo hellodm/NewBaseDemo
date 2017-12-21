@@ -1,0 +1,73 @@
+apply plugin: 'android'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.2'
+    defaultConfig {
+        applicationId 'dong.myapplication'
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName '1.0'
+//        jackOptions {.
+//            enabled true
+//        }
+    }
+    buildTypes {
+        release {
+            apply plugin: 'announce'
+            apply plugin: 'eclipse'
+//            runProguard false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+
+//    compileOptions {
+//        sourceCompatibility JavaVersion.VERSION_1_8
+//        targetCompatibility JavaVersion.VERSION_1_8
+//    }
+}
+
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+    mavenCentral()
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/butterknife-5.1.1.jar')
+    compile project(':PullRefreshlibrary')
+    compile files('libs/volley.jar')
+    compile files('libs/gotye_api_release.jar')
+    compile files('libs/Msc.jar')
+    compile files('libs/wxvoice.jar')
+    compile(name: 'ijkplayer-armv7a-debug', ext: 'aar')
+    compile(name: 'ijkplayer-java-debug', ext: 'aar')
+    //    compile 'tv.danmaku.ijk.media:ijkplayer-java:0.5.1'
+    //    compile 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.5.1'
+    //    compile 'tv.danmaku.ijk.media:ijkplayer-exo:0.5.1'
+    compile files('libs/commons-net-3.5.jar')
+    //    compile 'org.openpnp:opencv:3.2.0-1'
+    //    compile project(path: ':openCVLibrary320')
+    compile 'com.android.support:support-v4:24.2.1'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.2.2'
+//    compile 'io.reactivex:rxandroid:2.0.1'
+//    compile 'io.reactivex:rxjava:2.0.7'
+    compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.bartoszlipinski.recyclerviewheader:library:1.2.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    testCompile 'junit:junit:4.12'
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+}
+apply plugin: 'kotlin-android-extensions'

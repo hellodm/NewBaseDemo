@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">我的测试</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_action_activity2">ActionActivity2</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_comment">CommentActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_bitmap">BitmapActivity</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_json">JsonActivity</string>
+    <string name="title_activity_list_refresh">ListRefresh</string>
+    <string name="title_activity_bace">BaceActivity</string>
+    <string name="title_activity_enum">EnumActivity</string>
+    <string name="title_activity_my_voice">MyVoiceActivity</string>
+    <string name="title_activity_circle">CircleActivity</string>
+
+    <color name="blue">#0000ff</color>
+    <color name="red">#ff0000</color>
+    <color name="yellow">#00ff00</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray_cc">#CCCCCC</color>
+
+    <color name="blue_year">#009aff</color>
+
+    <string name="title_activity_edit">EditActivity</string>
+    <string name="title_activity_baidu">BaiduActivity</string>
+    <string name="title_activity_check">CheckActivity</string>
+    <string name="title_activity_frag">FragActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_compare">CompareActivity</string>
+    <string name="title_activity_pick">PickActivity</string>
+    <string name="title_activity_location">LocationActivity</string>
+    <string name="title_activity_sun_set">SunSetActivity</string>
+    <string name="title_activity_open_gl">OpenGLActivity</string>
+    <string name="title_activity_unity">UnityActivity</string>
+    <string name="title_activity_web">Web</string>
+    <string name="title_activity_scratch">ScratchActivity</string>
+    <string name="title_activity_shake_del">ShakeDelActivity</string>
+    <string name="title_activity_voice_map">VoiceMapActivity</string>
+    <string name="title_activity_base_title">BaseTitleActivity</string>
+    <string name="title_activity_seek_bar">SeekBarActivity</string>
+    <string name="title_activity_sound_pool">SoundPoolActivity</string>
+    <string name="title_activity_activity_v">ActivityV</string>
+    <string name="title_activity_ftp">FTPActivity</string>
+    <string name="title_activity_wave">WaveActivity</string>
+    <string name="title_activity_call_record">CallRecordActivity</string>
+    <string name="title_activity_remote">RemoteActivity</string>
+
+</resources>

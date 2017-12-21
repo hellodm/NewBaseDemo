@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hello.app.Activity.KplayActivity">
+
+    <LinearLayout
+        android:id="@+id/lin_viewPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <!--<com.hello.app.MyView.DirectionalViewPager-->
+        <!--android:id="@+id/pager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="250dp"></com.hello.app.MyView.DirectionalViewPager>-->
+        <!--<com.hello.app.MyView.VerticalViewPager-->
+        <!--android:id="@+id/pager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="250dp"-->
+        <!--&gt;-->
+        <!--</com.hello.app.MyView.VerticalViewPager>-->
+
+        <com.hello.app.MyView.ViewPager.RecyclerViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="true"></com.hello.app.MyView.ViewPager.RecyclerViewPager>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,192 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.hello.app.Activity.BitmapActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <!--<com.hello.app.MyView.LineChartView-->
+            <!--android:layout_width="300dp"-->
+            <!--android:layout_height="200dp"-->
+            <!--android:layout_marginBottom="20dp"/>-->
+
+
+            <LinearLayout
+                android:id="@+id/lin_ani"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:background="@color/gray_cc">
+
+
+                <ImageView
+                    android:id="@+id/image_ani"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_car" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/image_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/loading_wiper"
+
+                />
+
+            <com.hello.app.MyView.WiperView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@color/gray_cc" />
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+
+            <!--<com.hello.app.MyView.CornerView-->
+            <!--android:id="@+id/circle"-->
+            <!--android:layout_width="150dp"-->
+            <!--android:layout_height="150dp"-->
+            <!--app:corner_radius="10"-->
+
+            <!--/>-->
+            <com.hello.app.MyView.CircleView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/dynamic_expression_loading"
+                app:circleColor="@color/red"
+                app:circleIsFrame="true"
+                app:circleWidth="3dp" />
+
+            <com.hello.app.MyView.CircleView
+                android:id="@+id/frameView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/test1"
+                app:circleColor="@color/gray_cc"
+                app:circleIsFrame="true"
+                app:circleWidth="10dp" />
+
+
+            <com.hello.app.MyView.GroupHeadView
+                android:id="@+id/group1"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/gray_cc"
+                android:src="@drawable/test1"
+                app:GroupNumber="1" />
+
+            <com.hello.app.MyView.GroupHeadView
+                android:id="@+id/group2"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/gray_cc"
+                android:src="@drawable/test1"
+                app:GroupNumber="2" />
+
+            <com.hello.app.MyView.GroupHeadView
+                android:id="@+id/group3"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/gray_cc"
+                android:src="@drawable/test1"
+                app:GroupNumber="3" />
+
+            <com.hello.app.MyView.GroupHeadView
+                android:id="@+id/group4"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/gray_cc"
+                android:src="@drawable/test1"
+                app:GroupNumber="4" />
+
+            <ImageView
+                android:id="@+id/image_cut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+            <ImageView
+                android:id="@+id/image_cu1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray_cc" />
+
+            <ImageView
+                android:id="@+id/image_cu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray_cc" />
+
+            <ImageView
+                android:id="@+id/image_cu3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray_cc" />
+
+            <ImageView
+                android:id="@+id/image_cu4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray_cc" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:visibility="gone" />
+
+
+            <com.hello.app.MyView.SwitchView
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

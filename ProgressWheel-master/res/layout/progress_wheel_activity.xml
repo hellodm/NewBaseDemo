@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_spin"
+        android:text="Start spinning"
+        android:layout_marginTop="15dp" />
+
+    <SeekBar
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressAmount"
+        android:gravity="center"
+        android:layout_alignTop="@+id/btn_spin"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_increment"
+        android:text="Increment"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+
+            <com.todddavies.components.progressbar.ProgressWheel
+                android:id="@+id/progressBarTwo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                ProgressWheel:textColor="#222222"
+                ProgressWheel:textSize="14sp"
+                ProgressWheel:rimColor="#44000000"
+                ProgressWheel:barLength="60dp"
+                ProgressWheel:barColor="#339BB9"
+                ProgressWheel:barWidth="25dp"
+                ProgressWheel:rimWidth="25dp"
+                ProgressWheel:spinSpeed="3dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Todd Davies - 2012"
+        android:textColor="#000"
+        android:id="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A different style"
+        android:id="@+id/btn_random"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

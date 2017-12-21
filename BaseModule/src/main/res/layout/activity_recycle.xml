@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/activity_remote"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hello.app.Activity.RemoteActivity">
+
+
+    <com.hello.app.MyView.recyclerView.MyRecycleView
+        android:id="@+id/recycler_view"
+        android:background="@color/gray_cc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <RelativeLayout
+        android:id="@+id/common_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#123300"
+
+        android:gravity="center_vertical"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/button_go_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="down" />
+
+        <Button
+            android:id="@+id/button_go_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
+            android:layout_weight="0.18"
+            android:text="up" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

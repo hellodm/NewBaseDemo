@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin">
+
+
+    <Button
+        android:id="@+id/button_send_lock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送锁屏通知" />
+
+    <Button
+        android:id="@+id/button_send_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="发送横屏通知" />
+
+    <Button
+        android:id="@+id/button_send_desktop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="发送桌面通知" />
+
+    <Button
+        android:id="@+id/button_send_fixed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="发送固定弹窗" />
+
+    <Button
+        android:id="@+id/button_send_dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="发送动态弹窗" />
+
+</LinearLayout>
+

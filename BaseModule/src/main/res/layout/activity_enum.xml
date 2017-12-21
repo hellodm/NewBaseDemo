@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.hello.app.Activity.EnumActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+
+            <com.hello.app.MyView.MedalView
+                android:id="@+id/medalView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="@color/gray_cc" />
+
+            <LinearLayout
+                android:id="@+id/lin_frag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="默认的text" />
+
+            <Button
+                android:id="@+id/button_red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="红色" />
+
+            <Button
+                android:id="@+id/button_green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="绿色" />
+
+            <Button
+                android:id="@+id/button_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="蓝色" />
+
+            <com.hello.app.MyView.SwitchView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <com.hello.app.MyView.CalendarYearView
+                android:layout_width="250dp"
+                android:layout_height="324dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray_cc" />
+
+            <GridView
+                android:id="@+id/grid1"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:numColumns="3"
+
+                />
+
+            <GridView
+                android:id="@+id/grid_year"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:numColumns="1"
+                android:visibility="gone"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

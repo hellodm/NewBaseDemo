@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hello.app.Activity.CircleActivity">
+
+
+    <com.hello.app.MyView.CircleImageSurfaceView
+        android:id="@+id/circle"
+        circle:radius_i="180"
+        circle:radius_o="250"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        circle:image_i="@drawable/test1"
+        circle:image_o="@drawable/test1"
+        circle:period_i="10"
+        circle:period_o="5" />
+
+</LinearLayout>

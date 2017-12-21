@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hello.app.Activity.CompareActivity"
+    android:background="#35393c">
+
+
+    <!--<EditText android:layout_width="match_parent"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:layout_height="wrap_content" />-->
+    <!-- -->
+    <!--<LinearLayout android:layout_width="match_parent"-->
+    <!--android:background="@color/white"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_margin="5dp"-->
+    <!--android:layout_height="50dp"></LinearLayout>-->
+
+    <com.hello.app.MyView.CompareSurfaceView
+        android:id="@+id/compare"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <com.hello.app.MyView.SmileView
+            android:id="@+id/SmileView"
+            android:layout_width="114dp"
+            android:layout_height="150dp" />
+
+        <com.hello.app.MyView.SmileView
+            android:id="@+id/SmileView2"
+            android:layout_width="114dp"
+            android:layout_height="114dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <com.hello.app.MyView.SmileView
+            android:id="@+id/SmileView3"
+            android:layout_width="150dp"
+            android:layout_height="200dp" />
+
+        <com.hello.app.MyView.SmileView
+            android:id="@+id/SmileView4"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+    </LinearLayout>
+
+
+    <com.hello.app.MyView.ScoreView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/scoreView"
+        android:layout_width="272dp"
+        android:layout_height="91dp" />
+
+</LinearLayout>

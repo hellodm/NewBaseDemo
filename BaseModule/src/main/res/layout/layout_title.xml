@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/black"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/title_lin_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/blue"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
+
+            <com.hello.app.MyView.MyTitleCenterView
+                android:id="@+id/title_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/yellow"
+                android:gravity="center_vertical|left" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/title_lin_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

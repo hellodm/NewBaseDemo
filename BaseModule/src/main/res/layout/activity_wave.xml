@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/activity_wave"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hello.app.Activity.WaveActivity">
+
+    <com.hello.app.MyView.wave.WaveView
+        android:id="@+id/waveView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#B2000000" />
+
+    <com.hello.app.MyView.wave.WaveMiView
+        android:id="@+id/waveView1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/waveView"
+        android:layout_marginTop="10dp"
+        android:background="@color/white" />
+
+    <Button
+        android:id="@+id/button_wave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/waveView1"
+        android:layout_marginTop="10dp"
+        android:text="开始" />
+
+    <com.hello.app.MyView.round.RoundedImageView
+        android:id="@+id/image_color"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/button_wave"
+        android:scaleType="centerCrop"
+
+        android:src="@color/yellow"
+        app:corner_r="10dp"
+        app:oval="false"
+
+        />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/image_color1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/button_wave"
+        android:scaleType="centerCrop"
+        android:src="@color/yellow"
+        android:layout_toRightOf="@+id/image_color"
+
+        />
+
+
+</RelativeLayout>
